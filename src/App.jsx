@@ -135,7 +135,7 @@ const App = () => {
          .then((result) => {
             console.log(result);
             if (result) {
-               fetch("http://localhost:3000/image", {
+               fetch("https://facerec-api-lt9c.onrender.com/image", {
                   method: "put",
                   headers: { "Content-Type": "application/json" },
                   body: JSON.stringify({

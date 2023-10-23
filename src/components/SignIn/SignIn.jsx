@@ -14,7 +14,7 @@ const SignIn = ({ onRouteChange, loadUser }) => {
    };
 
    const getSignIn = () => {
-      fetch("http://localhost:3000/signin", {
+      fetch("https://facerec-api-lt9c.onrender.com/signin", {
          method: "post",
          headers: { "Content-Type": "application/json" },
          body: JSON.stringify({
@@ -34,22 +34,6 @@ const SignIn = ({ onRouteChange, loadUser }) => {
    const onSubmitSignIn = (e) => {
       e.preventDefault();
       getSignIn();
-      // fetch("http://localhost:3000/signin", {
-      //    method: "post",
-      //    headers: { "Content-Type": "application/json" },
-      //    body: JSON.stringify({
-      //       email: signInEmail,
-      //       password: signInPass,
-      //    }),
-      // })
-      //    .then((resp) => resp.json())
-      //    .then((user) => {
-      //       console.log(user);
-      //       if (user.id) {
-      //          loadUser(user);
-      //          onRouteChange("home");
-      //       }
-      //    });
    };
 
    return (
