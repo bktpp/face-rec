@@ -35,7 +35,7 @@ const App = () => {
    };
 
    const connectLocal = async () => {
-      const srvr = await fetch("http://localhost:3000/");
+      const srvr = await fetch("https://facerec-api-lt9c.onrender.com/");
       const data = await srvr.json();
       console.log(data);
    };
