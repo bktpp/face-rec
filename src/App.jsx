@@ -37,7 +37,6 @@ const App = () => {
    const connectLocal = async () => {
       const srvr = await fetch("https://facerec-api-lt9c.onrender.com/");
       const data = await srvr.json();
-      console.log(data);
    };
 
    connectLocal();
@@ -68,11 +67,9 @@ const App = () => {
 
    const displayFaceBox = (box) => {
       setBox(box);
-      console.log(box);
    };
 
    const onInputChange = (event) => {
-      console.log(event.target.value);
       setInput(event.target.value);
    };
 
@@ -133,7 +130,6 @@ const App = () => {
       )
          .then((response) => response.json())
          .then((result) => {
-            console.log(result);
             if (result) {
                fetch("https://facerec-api-lt9c.onrender.com/image", {
                   method: "put",
