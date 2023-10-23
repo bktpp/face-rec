@@ -1,0 +1,18 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: monospace, "Courier New", Courier;
+   background: linear-gradient(to right, #ec4899 0%, #3b82f6 100%);
+}
+
+button {
+   cursor: pointer;
+}
+
+.App {
+   height: 100%;
+}
+/* .wrapper {
+   height: 100%;
+   width: 100%;
+} */
